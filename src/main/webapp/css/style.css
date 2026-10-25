@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /* Neumorphic Dark Base */
+    --bg-base: #24272c;
+    --surface: #24272c;
+    --border-soft: rgba(255, 255, 255, 0.05);
+
+    /* Neumorphic Shadow Elevations */
+    --shadow-extruded: 8px 8px 16px #1b1d21, -8px -8px 16px #2d3137;
+    --shadow-extruded-sm: 4px 4px 10px #1b1d21, -4px -4px 10px #2d3137;
+    --shadow-inset: inset 5px 5px 10px #1b1d21, inset -5px -5px 10px #2d3137;
+    --shadow-pressed: inset 3px 3px 6px #1b1d21, inset -3px -3px 6px #2d3137;
+
+    /* Restaurant Brand Colors (Crimson, Warm Amber, Accent Orange) */
+    --primary: #ff4757;
+    --primary-hover: #e84118;
+    --accent-orange: #ff7f50;
+    --accent-yellow: #ffa502;
+    --gradient-warm: linear-gradient(135deg, #ff4757 0%, #ff7f50 100%);
+    --gradient-gold: linear-gradient(135deg, #ffa502 0%, #ff7f50 100%);
+
+    /* Typography Colors */
+    --text-high: #f1f2f6;
+    --text-mid: #a4b0be;
+    --text-low: #747d8c;
+    --error: #ff6b81;
+    --success: #2ed573;
+
+    --radius-card: 20px;
+    --radius-btn: 12px;
+    --radius-input: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--bg-base);
+    color: var(--text-high);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Reusable Neumorphic Card */
+.neu-card {
+    background: var(--surface);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-extruded);
+    border: 1px solid var(--border-soft);
+    padding: 28px;
+}
+
+/* Reusable Inset Inputs */
+.neu-input {
+    width: 100%;
+    padding: 13px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-input);
+    color: var(--text-high);
+    box-shadow: var(--shadow-inset);
+    outline: none;
+    font-size: 14px;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.neu-input:focus {
+    border-color: var(--primary);
+    box-shadow: inset 3px 3px 8px #181a1d, inset -3px -3px 8px #30343b;
+}
+
+/* Reusable Primary Button */
+.neu-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 24px;
+    background: var(--gradient-warm);
+    border: none;
+    border-radius: var(--radius-btn);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 4px 4px 12px rgba(255, 71, 87, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.neu-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 18px rgba(255, 71, 87, 0.5);
+}
+
+.neu-btn:active {
+    transform: translateY(1px);
+    box-shadow: var(--shadow-pressed);
+}
+
+/* Secondary Neumorphic Soft Button */
+.neu-btn-soft {
+    background: var(--surface);
+    color: var(--text-high);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-extruded-sm);
+    padding: 10px 18px;
+    border-radius: var(--radius-btn);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.neu-btn-soft:hover {
+    color: var(--primary);
+}
+
+.neu-btn-soft:active {
+    box-shadow: var(--shadow-inset);
+}

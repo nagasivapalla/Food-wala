@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodwala | Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+
+    <style>
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .hero-box {
+            max-width: 580px;
+            padding: 56px 40px;
+        }
+
+        .brand-icon {
+            font-size: 52px;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .brand-title {
+            font-size: 38px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        .brand-subtitle {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 34px;
+            line-height: 1.6;
+        }
+
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            background: var(--bg-main);
+            color: var(--text-primary);
+            box-shadow: var(--neo-btn-raised);
+        }
+
+        .btn-outline:hover {
+            color: var(--accent-amber);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-container">
+        <div class="neo-card hero-box">
+            <span class="brand-icon">🍔</span>
+            <h1 class="brand-title">Foodwala</h1>
+            <p class="brand-subtitle">
+                Craving your favorite dishes? Explore top-rated restaurants near you, customize your feast, and enjoy instant delivery.
+            </p>
+
+            <div class="cta-actions">
+                <a href="restaurant" class="neo-btn" style="padding: 14px 28px; font-size: 15px;">
+                    Explore Food →
+                </a>
+                <a href="login.jsp" class="neo-btn btn-outline" style="padding: 14px 28px; font-size: 15px;">
+                    Sign In
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

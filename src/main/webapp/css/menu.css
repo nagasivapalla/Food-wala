@@ -1,0 +1,159 @@
+/* Container & Header */
+.menu-container {
+    max-width: 920px;
+    margin: 36px auto;
+    padding: 0 20px;
+}
+
+.menu-header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 28px;
+    margin-bottom: 24px;
+    background: #252b36;
+    border-radius: 18px;
+    box-shadow: 6px 6px 14px #1c212a, -6px -6px 14px #2e3542;
+}
+
+.menu-header-card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.back-btn {
+    color: #ff5e3a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Vertical List of Dishes */
+.menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Horizontal Dish Card */
+.dish-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: #252b36;
+    border-radius: 20px;
+    box-shadow: 6px 6px 14px #1c212a, -6px -6px 14px #2e3542;
+    gap: 24px;
+}
+
+/* Left details */
+.dish-details {
+    flex: 1;
+}
+
+.dish-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+}
+
+.dish-desc {
+    font-size: 13px;
+    color: #8c97a8;
+    margin: 0 0 10px 0;
+    line-height: 1.45;
+    max-width: 540px;
+}
+
+.dish-price {
+    font-size: 16px;
+    font-weight: 800;
+    color: #ff3344;
+}
+
+/* Right Media Column */
+.dish-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    min-width: 120px;
+}
+
+.dish-thumb {
+    width: 120px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 4px 4px 10px #181c23;
+}
+
+/* Initial Add Button */
+.dish-media .neo-btn {
+    width: 100%;
+    padding: 7px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    background: #ff5e3a;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px #1c212a, -3px -3px 8px #2e3542;
+    transition: transform 0.15s ease;
+}
+
+.dish-media .neo-btn:active {
+    box-shadow: inset 2px 2px 4px #1c212a, inset -2px -2px 4px #2e3542;
+}
+
+/* Dark Neomorphic Stepper: [- count +] */
+.qty-control {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #20252e !important;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px #171b21, inset -2px -2px 5px #29303b;
+}
+
+.qty-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background: #252b36;
+    color: #ff3344;
+    font-size: 17px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px #191d24, -3px -3px 6px #2e3542;
+    transition: all 0.1s ease;
+}
+
+.qty-btn:active {
+    box-shadow: inset 2px 2px 4px #171b21, inset -2px -2px 4px #29303b;
+    transform: scale(0.95);
+}
+
+.qty-value {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    min-width: 18px;
+    text-align: center;
+}

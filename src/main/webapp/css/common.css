@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-main: #21242b;
+    --card-bg: #21242b;
+    --shadow-light: #2b2f38;
+    --shadow-dark: #17191e;
+
+    /* Restaurant Appetite Palette */
+    --primary: #ff5722;
+    --primary-hover: #e64a19;
+    --accent-amber: #ff9800;
+    --accent-green: #22c55e;
+    --accent-red: #ef4444;
+
+    /* Text */
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-dark: #1e293b;
+
+    /* Neomorphic Shadows */
+    --neo-raised: 8px 8px 18px var(--shadow-dark), -8px -8px 18px var(--shadow-light);
+    --neo-inset: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light);
+    --neo-convex: linear-gradient(145deg, #23272e, #1e2027);
+    --neo-btn-raised: 6px 6px 14px var(--shadow-dark), -6px -6px 14px var(--shadow-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Reusable Neomorphic Elements */
+.neo-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: var(--neo-raised);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.neo-input {
+    width: 100%;
+    background: var(--bg-main);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 13px 16px;
+    color: var(--text-primary);
+    font-size: 14px;
+    box-shadow: var(--neo-inset);
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.neo-input:focus {
+    border-color: var(--primary);
+    box-shadow: var(--neo-inset), 0 0 0 1px var(--primary);
+}
+
+.neo-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--primary), var(--accent-amber));
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.35);
+    transition: all 0.2s ease;
+}
+
+.neo-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+.neo-btn:active {
+    transform: translateY(1px);
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3);
+}
